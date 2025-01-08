@@ -26,10 +26,11 @@ header{
     z-index: 99;
 }
 
-.logo{
+.logo a{
     font-size: 2rem;
-    color: whitesmoke;
+    color: rgb(221, 213, 213);
     user-select: none;
+    text-decoration: none;
 }
 
 .navigation a{
@@ -79,18 +80,19 @@ header{
     line-height: 45px;
     box-shadow: 0 0 10px;
     border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.24);
+}
+
+input{
+    color: white;
 }
 
 
 h1, p{
     text-align: center;
-    color: white;
+    color: black;
 }
 
-
-form, .placeholder{
-    justify-content: center;
-}
 
 .Username, .password{
     width: 100%;

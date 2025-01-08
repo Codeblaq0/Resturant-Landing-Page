@@ -26,13 +26,14 @@ body{
     line-height: 45px;
     box-shadow: 0 0 10px;
     border-radius: 10px;
+    background-color: rgba(248, 230, 230, 0.274);
 }
 
 
 
 h1, p{
     text-align: center;
-    color: white;
+    color: black;
 }
 
 
