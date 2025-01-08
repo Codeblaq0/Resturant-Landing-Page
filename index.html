@@ -11,13 +11,21 @@
     <div class="section1">
         <header>
             <h2 class="logo">Tina's Eatery</h2>
+            <nav class="sidebar">
+                <i class="fa-solid fa-xmark" id="menu-icon" onclick=hideSidebar()></i>
+                <a href="#" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <span class="btnlogin-popup"><a href="login.html">Login</a></span>
+            </nav>
             <nav class="navigation">
                 <a href="#" class="active">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="contact.html">Contact</a>
                 <a href="about.html">About</a>
                 <span class="btnlogin-popup"><a href="login.html">Login</a></span>
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-bars" id="menu-icon" onclick=showSidebar()></i>
             </nav>
         </header>
         <div class="header"><h1>
@@ -93,5 +101,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
