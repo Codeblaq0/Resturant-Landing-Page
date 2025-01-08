@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(tina5.jpeg);
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Navbar*/
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2rem;
+    color: whitesmoke;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40PX;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -10px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation  .active{
+    color: white;
+}
+
+
+.navigation  .active{
+    color: black;
+}
+
+.main{
+    display: inline;
+    position: relative;
+    margin-top: 150px;
+    width: 400px;
+    height: 580px;
+    padding: 40px;
+    line-height: 45px;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+}
+
+
+h1, p{
+    text-align: center;
+    color: white;
+}
+
+
+form, .placeholder{
+    justify-content: center;
+}
+
+.Username, .password{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: none;
+}
+
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5px;
+}
+
+hr{
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .nav{
+        display: none;
+    }
+}

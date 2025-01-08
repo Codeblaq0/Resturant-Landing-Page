@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*First Section*/
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Tina.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: transparent;
+    padding: 20px 50px;
+    width: 100%;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2rem;
+    color: whitesmoke;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40PX;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: orange;
+    border-radius: 5px;
+    left: 0;
+    bottom: -10px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation  .active{
+    color: orange;
+}
+
+.btn:hover{
+    color: orange;
+    background: transparent;
+}
+
+
+button, .btn, a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.header{
+    font-size: 50px;
+    margin-top: 150px;
+    padding-left: 50px;
+    line-height: 90px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn1{
+    padding: 7px 25px;
+    border-radius: 20px;
+    color: white;
+    background-color: orange;
+    font-weight: 900;
+    cursor: pointer;
+    border-color: orange;
+}
+
+.btn1:hover{
+    background: transparent;
+    color: orange;
+}
+
+/*second section*/
+
+.section2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    font-size: 18px;
+    background: white;
+    border: none;
+}
+
+img{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.element1, .element2, .element3{
+    width: 430px;
+    margin: 50px 50px ;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+
+.shorts{
+    padding-left: 25px;
+}
+
+p{
+    padding: 10px;
+}
+
+.toggle-btn i{
+    color: #fff;
+    display: none;
+}
+
+.btn2{
+    color: black;
+    border: 1px solid;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-color:rgb(10, 7, 7);
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    color: orange;
+    background: transparent;
+    border-color: orange;
+}
+
+/*footer*/
+
+.footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    background-color: rgb(29, 28, 28);
+}
+
+.text1{
+    list-style: none;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.desc1{
+    padding: 20px 0 20px 0;
+}
+
+
+.desc{
+    float: left;
+    border: none;
+    padding: 10px 56px;
+}
+
+.descbtn{
+    border: none;
+    padding: 10px;
+    background: rgb(97, 92, 92);
+}
+
+
+
+@media (max-width:780px) {
+    
+.toggle-btn{
+    display: flex;
+}    
+
+
+.navigation a{
+    display:none;
+}
+
+.section2{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer, .text1{
+    display: block;
+    text-align: center;
+}
+
+.element1, .element2, .element3{
+    width: 300px;
+    margin: 50px 100px;
+}
+}

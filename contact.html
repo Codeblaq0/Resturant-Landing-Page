@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><a href="resturant.html">Tina's Eatery</a></h2>
+        <nav class="navigation">
+            <span class="btnlogin-popup"><a href="login.html">Login</a></span>
+        </nav>
+    </header>
+    <div class="main">
+         <h2>Contact Us</h2>
+        <p>Fill in your details</p>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" class="name">
+            <label for="email">Email:</label>
+            <input type="text" class="email">
+            <label for="phone">Phone:</label>
+            <input type="tel" class="phone">
+            <label for="message">message:</label>
+            <textarea name="message" id="message" 
+            rows="5" required></textarea>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
